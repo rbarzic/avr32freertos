@@ -1,0 +1,5 @@
+STK1002 : SW6 -> MACB0
+STK1000 : J15<->J1     
+
+Serial port A can be used to see some messages
+57600 8N1 no hardware flow control  

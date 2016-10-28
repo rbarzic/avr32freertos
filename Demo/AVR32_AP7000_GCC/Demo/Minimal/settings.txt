@@ -1,0 +1,13 @@
+** Important                                         **
+** A wire must be put between pin 2 and 3 of USART C **
+
+STK1002 : SW6 : GPIO
+STK1000 : J3 connected to J15
+
+LED7 : slow blinking (>1 sec) : OK
+       fast blinking          : KO
+
+Serial port A can be used to see some messages
+57600 8N1 no hardware flow control
+
+

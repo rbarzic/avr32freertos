@@ -1,0 +1,443 @@
+
+rtosdemo.elf:     file format elf32-avr32
+
+SYMBOL TABLE:
+00000000 l    d  .reset	00000000 .reset
+00000100 l    d  .exit	00000000 .exit
+00000200 l    d  .exception	00000000 .exception
+00000600 l    d  .handlers	00000000 .handlers
+000007dc l    d  .text	00000000 .text
+10000000 l    d  .data	00000000 .data
+10000014 l    d  .bss	00000000 .bss
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    d  .debug_loc	00000000 .debug_loc
+00000000 l    d  .debug_pubnames	00000000 .debug_pubnames
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_ranges	00000000 .debug_ranges
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  *ABS*	00000000 .shstrtab
+00000000 l    d  *ABS*	00000000 .symtab
+00000000 l    d  *ABS*	00000000 .strtab
+00000000 l    df *ABS*	00000000 ../../../../Demo/AVR32_AP7000_GCC//support/crt0.S
+000000a8 l       .reset	00000000 exit_start
+00000026 l       .reset	00000000 _set_sr
+00000080 l       .reset	00000000 init_sr
+0000002c l       .reset	00000000 _set_stack1
+000000a0 l       .reset	00000000 sram_start_addr
+00000036 l       .reset	00000000 _copy_data
+00000084 l       .reset	00000000 text_end_addr
+00000088 l       .reset	00000000 data_start_addr
+0000008c l       .reset	00000000 data_end_addr
+00000044 l       .reset	00000000 _clear_bss
+00000090 l       .reset	00000000 bss_start_addr
+00000094 l       .reset	00000000 bss_end_addr
+00000052 l       .reset	00000000 _set_stack2
+00000098 l       .reset	00000000 stack_addr
+00000058 l       .reset	00000000 _set_evba
+00000064 l       .reset	00000000 _set_acba
+00000074 l       .reset	00000000 _go
+000000a4 l       .reset	00000000 main_start
+0000009c l       .reset	00000000 sram_end_addr
+00000200 l       .exception	00000000 _handle_unrecoverable_exception
+00000308 l       .exception	00000000 _handle_exception
+00000204 l       .exception	00000000 _handle_TLB_multiple_hit
+00000208 l       .exception	00000000 _handle_bus_error_data_fetch
+0000020c l       .exception	00000000 _handle_bus_error_instruction_fetch
+00000210 l       .exception	00000000 _handle_nmi
+00000214 l       .exception	00000000 _handle_instruction_address
+00000218 l       .exception	00000000 _handle_ITLB_protection
+0000021c l       .exception	00000000 _handle_Breakpoint
+00000220 l       .exception	00000000 _handle_Ilegal_Opcode
+00000224 l       .exception	00000000 _handle_Unimplemented_instruction
+00000228 l       .exception	00000000 _handle_Privilege_violation
+0000022c l       .exception	00000000 _handle_Floatting_point
+00000230 l       .exception	00000000 _handle_Coprocessor_absent
+00000234 l       .exception	00000000 _handle_data_address_read
+00000238 l       .exception	00000000 _handle_data_address_write
+0000023c l       .exception	00000000 _handle_DTLB_protection_read
+00000240 l       .exception	00000000 _handle_DTLB_protection_write
+00000244 l       .exception	00000000 _handle_DTLB_modified
+00000250 l       .exception	00000000 _handle_ITLB_miss
+00000260 l       .exception	00000000 _handle_DTLB_miss_read
+00000270 l       .exception	00000000 _handle_DTLB_miss_write
+00000300 l       .exception	00000000 _handle_Supervisor_Call
+00000000 l    df *ABS*	00000000 port.c
+0000287a l       .text	00000000 __SAVE_SCALL_NOT_SUP
+000028ae l       .text	00000000 debug_scall
+000028e2 l       .text	00000000 __RESTORE_SCALL_NOT_SUP
+00000000 l    df *ABS*	00000000 avr32_int.c
+000006a0 l       .handlers	00000000 __int0_handler__
+10010208 l     O .bss	00000004 __offset_int0
+000006b0 l       .handlers	00000000 __int1_handler__
+10010204 l     O .bss	00000004 __offset_int1
+000006c0 l       .handlers	00000000 __int2_handler__
+10010200 l     O .bss	00000004 __offset_int2
+100101fc l     O .bss	00000004 __offset_int3
+000006d0 l       .handlers	00000000 __int3_handler__
+000006e0 l       .handlers	00000000 __int_default_handler__
+00000000 l    df *ABS*	00000000 serial.c
+10010298 l     O .bss	00000004 xRxedChars
+10010294 l     O .bss	00000004 xCharsForTx
+0000370a l     O .text	00000004 C.7.8707
+00000000 l    df *ABS*	00000000 main.c
+000008ee l     O .text	00000004 C.2.8765
+00000a84 l     F .text	0000014c vErrorChecks
+00000bd0 l     F .text	000000e0 vMemCheckTask
+10000014 l     O .bss	00000004 lErrorOccurred.8844
+00000000 l    df *ABS*	00000000 tasks.c
+1000001c l     O .bss	00000004 uxTopReadyPriority
+10000020 l     O .bss	00000004 uxSchedulerSuspended
+10000024 l     O .bss	00000004 xTickCount
+10000028 l     O .bss	00000004 xTracing
+1000002c l     O .bss	00000004 xMissedYield
+10000030 l     O .bss	00000004 uxMissedTicks
+10000034 l     O .bss	00000004 uxTopUsedPriority
+10000038 l     O .bss	00000004 uxCurrentNumberOfTasks
+1000003c l     O .bss	00000004 xSchedulerRunning
+10000040 l     O .bss	00000004 uxTasksDeleted
+1000009c l     O .bss	00000014 xTasksWaitingTermination
+100000f4 l     O .bss	00000064 pxReadyTasksLists
+100000b0 l     O .bss	00000014 xPendingReadyList
+10000088 l     O .bss	00000014 xSuspendedTaskList
+100000c8 l     O .bss	00000004 pxDelayedTaskList
+100000c4 l     O .bss	00000004 pxOverflowDelayedTaskList
+1000007c l     O .bss	00000004 pcTraceBufferEnd
+10000084 l     O .bss	00000004 pcTraceBuffer
+10000080 l     O .bss	00000004 pcTraceBufferStart
+10000004 l     O .data	00000004 uxPreviousTask.9951
+10000044 l     O .bss	00000004 uxTaskNumber.9674
+100000e0 l     O .bss	00000014 xDelayedTaskList1
+100000cc l     O .bss	00000014 xDelayedTaskList2
+000018dc l     F .text	000000a4 prvIdleTask
+10000048 l     O .bss	00000032 pcStatusString.10117
+000015ce l     F .text	00000082 prvListTaskWithinSingleList
+00000000 l    df *ABS*	00000000 queue.c
+00001b44 l     F .text	00000024 prvIsQueueFull
+00001b68 l     F .text	0000007c prvUnlockQueue
+00001d6c l     F .text	00000024 prvIsQueueEmpty
+00000000 l    df *ABS*	00000000 list.c
+00000000 l    df *ABS*	00000000 croutine.c
+1000015c l     O .bss	00000004 uxTopCoRoutineReadyPriority
+10000160 l     O .bss	00000004 xCoRoutineTickCount
+10000180 l     O .bss	00000004 pxOverflowDelayedCoRoutineList
+10000184 l     O .bss	00000004 pxDelayedCoRoutineList
+10000164 l     O .bss	00000004 xPassedTicks.8536
+10000168 l     O .bss	00000004 xLastTickCount.8535
+1000016c l     O .bss	00000014 xPendingReadyList
+100001b0 l     O .bss	00000028 pxReadyCoRoutineLists
+1000019c l     O .bss	00000014 xDelayedCoRoutineList1
+10000188 l     O .bss	00000014 xDelayedCoRoutineList2
+00000000 l    df *ABS*	00000000 heap_2.c
+100001d8 l     O .bss	00000004 xHeapHasBeenInitialised.8959
+100001dc l     O .bss	00000008 xEnd
+100001ec l     O .bss	00010004 xHeap
+100001e4 l     O .bss	00000008 xStart
+00000000 l    df *ABS*	00000000 stk1000.c
+00000000 l    df *ABS*	00000000 printf-stdarg.c
+00002ad8 l     F .text	00000020 printchar
+00002af8 l     F .text	000000ac prints
+00002ba4 l     F .text	000000ac printi
+00002c50 l     F .text	00000174 print
+00000000 l    df *ABS*	00000000 usart.c
+00002e00 l     F .text	00000058 usart_set_baudrate
+00000000 l    df *ABS*	00000000 pio.c
+00000000 l    df *ABS*	00000000 sdram.c
+00000000 l    df *ABS*	00000000 mt481c2m32b2tg.c
+00000000 l    df *ABS*	00000000 sm.c
+00000000 l    df *ABS*	00000000 unhandled_exceptions.c
+1001020c l     O .bss	00000080 _string_buff
+00000000 l    df *ABS*	00000000 ParTest.c
+00003604 l     F .text	0000000c SetLeds
+1001028c l     O .bss	00000004 ulLEDReg
+00000000 l    df *ABS*	00000000 mylib.c
+00000000 l    df *ABS*	00000000 BlockQ.c
+1001029c l     O .bss	00000006 sBlockingProducerCount
+100102a2 l     O .bss	00000006 sBlockingConsumerCount
+00003a14 l     F .text	00000048 vBlockingQueueProducer
+00003a5c l     F .text	00000044 vBlockingQueueConsumer
+100102a8 l     O .bss	00000006 sLastBlockingProducerCount.9066
+100102ae l     O .bss	00000006 sLastBlockingConsumerCount.9065
+00000000 l    df *ABS*	00000000 comtest.c
+100102b4 l     O .bss	00000004 uxRxLoops
+100102b8 l     O .bss	00000004 uxBaseLED
+100102bc l     O .bss	00000004 xPort
+00003b50 l     F .text	00000080 vComTxTask
+00003bd0 l     F .text	00000098 vComRxTask
+00000000 l    df *ABS*	00000000 crflash.c
+10000008 l     O .data	00000004 uxCoRoutineFlashStatus
+100102c0 l     O .bss	00000004 xFlashQueue
+00003dcc l     F .text	000000a8 prvFlashCoRoutine
+00003d08 l     F .text	000000c4 prvFixedDelayCoRoutine
+00003ce8 l     O .text	00000020 xFlashRates.8486
+00000000 l    df *ABS*	00000000 crhook.c
+100102c4 l     O .bss	00000004 xCoRoutineErrorDetected
+100102c8 l     O .bss	00000004 uxNumberToPost
+100102cc l     O .bss	00000004 uxCallCounter
+100102f0 l     O .bss	00000010 xHookRxQueues
+100102e0 l     O .bss	00000010 xHookTxQueues
+00003f80 l     F .text	0000012c prvHookCoRoutine
+100102d0 l     O .bss	00000010 uxReceivedValue.8506
+00000000 l    df *ABS*	00000000 death.c
+10010300 l     O .bss	00000004 uxTasksRunningAtStart
+10010304 l     O .bss	00000002 usCreationCount
+00004154 l     F .text	00000094 vCreateTasks
+00004110 l     F .text	00000044 vSuicidalTask
+10010308 l     O .bss	00000004 uxTasksRunningNow.8992
+1000000c l     O .data	00000002 usLastCreationCount.8990
+00000000 l    df *ABS*	00000000 dynamic.c
+1001030c l     O .bss	00000004 xSuspendedQueueReceiveError
+10010310 l     O .bss	00000004 xSuspendedQueueSendError
+10010314 l     O .bss	00000002 usCheckVariable
+10010328 l     O .bss	00000004 ulCounter
+10010330 l     O .bss	00000004 xContinousIncrementHandle
+00004318 l     F .text	00000034 vContinuousIncrementTask
+1001032c l     O .bss	00000004 xLimitedIncrementHandle
+000042f4 l     F .text	00000024 vLimitedIncrementTask
+0000434c l     F .text	000000ac vCounterControlTask
+000043f8 l     F .text	00000050 vQueueSendWhenSuspendedTask
+00004448 l     F .text	00000080 vQueueReceiveWhenSuspendedTask
+10010318 l     O .bss	00000004 ulValueToSend.9048
+1001031c l     O .bss	00000004 ulReceivedValue.9058
+10010320 l     O .bss	00000004 ulExpectedValue.9057
+10010324 l     O .bss	00000002 usLastTaskCheck.9074
+00000000 l    df *ABS*	00000000 flash.c
+10010334 l     O .bss	00000004 uxFlashTaskNumber
+00004538 l     F .text	00000068 vLEDFlashTask
+00000000 l    df *ABS*	00000000 flop.c
+10010338 l     O .bss	00000010 usTaskCheck
+00004690 l     F .text	000000d8 vCompetingMathTask1
+00004768 l     F .text	000000d8 vCompetingMathTask2
+00004934 l     F .text	000000f8 vCompetingMathTask4
+00004840 l     F .text	000000f4 vCompetingMathTask3
+10010348 l     O .bss	00000010 usLastTaskCheck.9466
+00000000 l    df *ABS*	00000000 integer.c
+10010358 l     O .bss	00000004 xTaskCheck
+00004a90 l     F .text	0000008c vCompeteingIntMathTask
+00000000 l    df *ABS*	00000000 PollQ.c
+1001035c l     O .bss	00000004 xPollingProducerCount
+10010360 l     O .bss	00000004 xPollingConsumerCount
+10010364 l     O .bss	00000004 xPolledQueue.8995
+00004bfc l     F .text	00000084 vPolledQueueConsumer
+00004b90 l     F .text	0000006c vPolledQueueProducer
+00000000 l    df *ABS*	00000000 semtest.c
+10010368 l     O .bss	00000008 sCheckVariables
+10010370 l     O .bss	00000002 sNextCheckVariable
+00004d9c l     F .text	000000e8 prvSemaphoreTest1
+00004e84 l     F .text	000000e8 prvSemaphoreTest2
+00004f6c l     F .text	000000e8 prvSemaphoreTest3
+00005054 l     F .text	000000e8 prvSemaphoreTest4
+00004db4 l       .text	00000000 prvSemaphoreTest1_label1
+00004e9c l       .text	00000000 prvSemaphoreTest2_label1
+00004f84 l       .text	00000000 prvSemaphoreTest3_label1
+0000506c l       .text	00000000 prvSemaphoreTest4_label1
+10010372 l     O .bss	00000008 sLastCheckVariables.9136
+00005178 l       .text	00000000 sem_task_error
+00000000 l    df *ABS*	00000000 /home/tools/rpm/BUILD/gcc-4.0.2/gcc/config/avr32/lib1funcs.S
+0000535e l       .text	00000000 __dfmul_return_op1
+00000000 l    df *ABS*	00000000 /home/tools/rpm/BUILD/gcc-4.0.2/gcc/config/avr32/lib1funcs.S
+0000537e l       .text	00000000 __dfsub
+00005540 l       .text	00000000 __dfadd
+00005528 l       .text	00000000 __dfsub_return_op1
+00005450 l       .text	00000000 __perform_dfsub
+00005512 l       .text	00000000 __dfsub_pack_result
+000056e6 l       .text	00000000 __dfadd_return_op1
+0000560a l       .text	00000000 __perform_dfadd
+000056d0 l       .text	00000000 __dfadd_pack_result
+00000000 l    df *ABS*	00000000 /home/tools/rpm/BUILD/gcc-4.0.2/gcc/config/avr32/lib1funcs.S
+000057d4 l       .text	00000000 __floatsidf_return_op1
+00000000 l    df *ABS*	00000000 /home/tools/rpm/BUILD/gcc-4.0.2/gcc/config/avr32/lib1funcs.S
+00000000 l    df *ABS*	00000000 /home/tools/rpm/BUILD/gcc-4.0.2/gcc/config/avr32/lib1funcs.S
+00005a06 l       .text	00000000 __dfdiv_return_op1
+000059f0 l       .text	00000000 __dfdiv_pack_result
+00000000 l    df *ABS*	00000000 memmove.c
+00003124 g     F .text	0000002c usart_send_address
+00000964 g     F .text	00000014 putchar
+00000600 g     F .handlers	000000a0 vPreemptiveTick
+000038e0 g     F .text	00000134 vStartBlockingQueueTasks
+000038d2 g     F .text	0000000c strcpy
+00002a46 g     F .text	0000000c EnableTimerCount
+00001cf8 g     F .text	00000074 xQueueSendFromISR
+0000212c g     F .text	00000070 xQueueCRReceiveFromISR
+10000000 g       *ABS*	00000000 __data_start__
+0000291c g     F .text	0000001c vPortExitCritical
+00000d58 g     F .text	00000038 uxTaskPriorityGet
+0000329c g     F .text	00000040 mt481c2m32b2tg_init
+000057e4 g     F .text	00000000 __avr32_f64_cmp_lt
+00005a44 g     F .text	000000a4 memmove
+00002564 g     F .text	00000044 xCoRoutineRemoveFromEventList
+00003054 g     F .text	00000008 usart_framing_error
+00005df4 g       *ABS*	00000000 __text_end__
+10000018 g     O .bss	00000004 pxCurrentTCB
+000034a0 g     F .text	00000012 sm_enable_pll1
+000008f2 g     F .text	00000072 setup_debug_usart
+0000348e g     F .text	00000012 sm_wait_for_lockbit0
+00003150 g     F .text	00000050 pioGetHandle
+000020c8 g     F .text	00000064 xQueueCRSendFromISR
+00000d90 g     F .text	000000e4 vTaskPrioritySet
+0000305c g     F .text	0000000a usart_overrun_error
+00002ac0 g     F .text	00000018 STK1000_all_led
+00003c68 g     F .text	00000018 xAreComTestTasksStillRunning
+00003486 g     F .text	00000008 sm_disable_pll0
+000029e4 g     F .text	0000004c xPortStartScheduler
+00005188 g     F .text	00000000 __avr32_f64_mul
+00000f94 g     F .text	00000028 vTaskEndScheduler
+00003846 g     F .text	0000001a memcpy
+0000127c g     F .text	00000064 vTaskPlaceOnEventList
+00003090 g     F .text	0000001e usart_read_char
+000026fc g     F .text	00000058 CheckTask1
+00003204 g     F .text	0000002c pio_enable_module
+10000000 g     O .data	00000004 wait_debugger
+00002a52 g     F .text	0000000c DisableTimerCount
+00005834 g     F .text	00000000 __avr32_f64_div
+00001ab8 g     F .text	0000008c xQueueCreate
+00002f88 g     F .text	00000024 usart_init_modem
+000045a0 g     F .text	000000f0 vStartMathTasks
+0000267c g     F .text	0000003c vPortFree
+00002478 g     F .text	000000ec xCoRoutineCreate
+000033cc g     F .text	00000088 intc_register_interrupt
+00002866 g     F .text	00000096 SCALLYield
+00004504 g     F .text	00000034 vStartLEDFlashTasks
+10010380 g     O .bss	00000100 int_group
+10010480 g     O .bss	00000004 xCreatedTask1
+00003e74 g     F .text	0000000c xAreFlashCoRoutinesStillRunning
+000021b6 g     F .text	0000001a vListInsertEnd
+0000222e g     F .text	0000002c vListRemove
+10000014 g       *ABS*	00000000 __bss_start__
+0000423c g     F .text	000000b8 vStartDynamicPriorityTasks
+100101f0 g     O .bss	00000004 number_of_it
+00003708 g     F .text	00000002 vSerialClose
+00002a94 g     F .text	00000010 STK1000_reset_led
+00003474 g     F .text	00000012 sm_enable_pll0
+000032dc g     F .text	0000005e intc_compute_offset
+00004a2c g     F .text	00000038 xAreMathsTaskStillRunning
+000021b0 g     F .text	00000006 vListInitialiseItem
+00003658 g     F .text	00000024 vParTestToggleLED
+00001d90 g     F .text	00000100 xQueueReceive
+00002a32 g     F .text	0000000a EnableTimerInterrupt
+00003620 g     F .text	00000038 vParTestSetLED
+00001f50 g     F .text	000000b8 xQueueCRSend
+24008000 g       *ABS*	00000000 __sram_end__
+00000200 g       .exception	00000000 _evba
+000035b4 g     F .text	00000050 HandleExceptionInC
+00003aa0 g     F .text	00000054 xAreBlockingQueuesStillRunning
+00002754 g     F .text	00000058 CheckTask2
+00001be4 g     F .text	00000114 xQueueSend
+000025a8 g     F .text	000000d4 pvPortMalloc
+00004c80 g     F .text	00000028 xArePollingQueuesStillRunning
+0000112c g     F .text	00000034 ulTaskEndTrace
+00003066 g     F .text	00000010 usart_write_char
+00001f34 g     F .text	0000001c vQueueDelete
+00002a30 g     F .text	00000002 vPortEndScheduler
+0000219c g     F .text	00000014 vListInitialise
+000010a0 g     F .text	00000024 xTaskGetTickCount
+00003c80 g     F .text	00000068 vStartFlashCoRoutines
+000040ac g     F .text	00000014 xAreHookCoRoutinesStillRunning
+00003230 g     F .text	0000006c sdramc_init
+24000000 g       *ABS*	00000000 __sram_start__
+000012e0 g     F .text	00000090 xTaskRemoveFromEventList
+00003edc g     F .text	000000a4 vApplicationTickHook
+000038b2 g     F .text	00000020 strcat
+000036c8 g     F .text	00000040 vSerialPutString
+000030ae g     F .text	0000002a usart_getchar
+000010e8 g     F .text	00000044 vTaskStartTrace
+00003694 g     F .text	00000034 xSerialPutChar
+00002a3c g     F .text	0000000a DisableTimerInterrupt
+000031a0 g     F .text	00000064 pio_setup_pin
+000034cc g     F .text	0000004a sm_set_main_clocks
+0000304c g     F .text	00000008 usart_parity_error
+00002a84 g     F .text	00000010 STK1000_set_led
+00000cb0 g     F .text	00000088 vTaskDelete
+000041e8 g     F .text	00000054 xIsCreateTaskStillRunning
+10000014 g       *ABS*	00000000 __data_end__
+00002fac g     F .text	00000024 usart_init_rs485
+1001048c g       *ABS*	00000000 __bss_end__
+000022bc g     F .text	000001bc vCoRoutineSchedule
+00002dec g     F .text	00000014 usart_reset
+000006a0 g     F .handlers	00000048 _dummy_intc
+00003516 g     F .text	0000000a sm_switch_to_clock
+10000158 g     O .bss	00000004 pxCurrentCoRoutine
+000034ba g     F .text	00000012 sm_wait_for_lockbit1
+00003af4 g     F .text	0000005c vAltStartComTestTasks
+00003520 g     F .text	00000020 hex2ascii
+00000000 g       .reset	00000000 _start
+00000d38 g     F .text	00000020 vTaskSuspendAll
+000056fc g     F .text	00000000 __avr32_s32_to_f64
+10000010 g     O .data	00000004 test_flow
+00002e58 g     F .text	000000bc usart_init_rs232
+00002008 g     F .text	000000c0 xQueueCRReceive
+0000285c g     F .text	0000000a prvAcknowledgeTimerInterrupt
+00003860 g     F .text	00000052 strncpy
+00000ef0 g     F .text	000000a4 vTaskResume
+00001160 g     F .text	0000011c vTaskSwitchContext
+00002dc4 g     F .text	00000014 printk
+00000e74 g     F .text	0000007c vTaskSuspend
+000010c4 g     F .text	00000024 uxTaskGetNumberOfTasks
+000007dc g     F .text	000000f0 init_sdram_startup
+00000fbc g     F .text	000000e4 vTaskIncrementTick
+00002aa4 g     F .text	0000001c STK1000_led
+00001820 g     F .text	000000bc vTaskList
+0000382c g     F .text	0000001a memset
+000035a0 g     F .text	00000014 str_to_buff
+00000978 g     F .text	0000010c main
+000021d0 g     F .text	0000005e vListInsert
+000027ac g     F .text	00000058 CheckTask3
+000006f0 g     F .handlers	000000ec vUSART3_ISR
+00001a00 g     F .text	000000b8 vTaskDelayUntil
+0000513c g     F .text	0000004c xAreSemaphoreTasksStillRunning
+0000536c g     F .text	00000000 __avr32_f64_sub
+00001e90 g     F .text	00000084 xQueueReceiveFromISR
+00001650 g     F .text	00000024 xTaskGetCurrentTaskHandle
+000026b8 g     F .text	00000044 vPortISRStartFirstTask
+10010484 g     O .bss	00000004 xCreatedTask2
+000015a8 g     F .text	00000026 usTaskCheckFreeStackSpace
+00001000 g       *ABS*	00000000 __gcc_stack_size
+000008cc g     F .text	00000022 delay
+00004a64 g     F .text	0000002c vStartIntegerMathTasks
+00001674 g     F .text	000001ac xTaskResumeAll
+00002dd8 g     F .text	00000014 sprintf
+00001550 g     F .text	00000058 vTaskStartScheduler
+00005530 g     F .text	00000000 __avr32_f64_add
+0000225c g     F .text	00000060 vCoRoutineAddToDelayedList
+00002a5e g     F .text	0000000c TimerStart
+0000367c g     F .text	00000018 xSerialGetChar
+00002f14 g     F .text	0000004c usart_init_handshaking
+00004b1c g     F .text	00000018 xAreIntegerMathsTaskStillRunning
+00004b34 g     F .text	0000005c vStartPolledQueueTasks
+100101f8 g     O .bss	00000004 debug_context
+0000333a g     F .text	00000092 intc_init
+00003610 g     F .text	00000010 vParTestInitialise
+00002fd0 g     F .text	00000074 usart_init_iso7816
+00002f60 g     F .text	00000028 usart_init_IrDA
+00000800 g       *ABS*	00000000 __acba_start__
+00003454 g     F .text	00000020 _intc_call_user_handler
+00001f14 g     F .text	00000020 uxQueueMessagesWaiting
+100101f4 g     O .bss	00000004 ulCriticalNesting
+000040c0 g     F .text	00000050 vCreateSuicidalTasks
+10010290 g     O .bss	00000004 num_it
+00003e80 g     F .text	0000005c vStartHookCoRoutines
+00003540 g     F .text	00000060 print32bit_word
+00001370 g     F .text	000001e0 xTaskCreate
+000056f4 g     F .text	00000000 __avr32_u32_to_f64
+00000100 g       .exit	00000000 exit
+00001980 g     F .text	00000080 vTaskDelay
+00003044 g     F .text	00000008 usart_reset_status
+10010488 g     O .bss	00000004 xSuspendedTestQueue
+00002804 g     F .text	00000058 CheckTask4
+1001037c g     O .bss	00000004 error_code
+00002a6c g     F .text	00000018 STK1000_reset_all_led
+000044c8 g     F .text	0000003c xAreDynamicPriorityTasksStillRunning
+00002938 g     F .text	000000ac pxPortInitialiseStack
+00003076 g     F .text	0000001a usart_bw_write_char
+000028fc g     F .text	00000020 vPortEnterCritical
+00000200 g       *ABS*	00000000 __evba_start__
+1001048c g       *ABS*	00000000 __stack_start__
+00004ca8 g     F .text	000000f4 vStartSemaphoreTasks
+0000370e g     F .text	0000011e xSerialPortInitMinimal
+000034b2 g     F .text	00000008 sm_disable_pll1
+000030d8 g     F .text	0000004c usart_putchar
+
+

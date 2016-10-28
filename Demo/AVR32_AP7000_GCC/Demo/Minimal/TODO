@@ -1,0 +1,8 @@
+- clean up port.c and portmacro.h
+- use CPU counter instead of timer for Interrupt (but, must be a #define)
+- make demo run @ 120MHz
+- add more configuration possibily for interrupt mapping
+- port "Full" Demo
+- let portEXIT_SWITCHING_ISR accept a parameter (mov r12,parameter...)
+- try a sleep IDLE instruction in the IDLE task
+- check if code work correctly with std functions (memcpy, etc...) - seems to be OK

@@ -1,0 +1,68 @@
+define current_task
+printf "Task name    : %s\n"  , pxCurrentTCB->pcTaskName 
+printf "pxTopOfStack : %x\n"  , pxCurrentTCB->pxTopOfStack
+end
+document current_task
+	print current task information
+end
+
+
+define rar_ex
+show sysreg 72
+end
+
+define rsr_ex
+show sysreg 40
+end
+
+define ecr
+show sysreg 16
+end
+
+define bear
+show sysreg 316
+end
+
+define sr
+show sysreg 0
+end
+
+
+define rar_int0
+show sysreg 56
+end
+
+define rsr_int0
+show sysreg 24
+end
+
+define rar_int1
+show sysreg 60
+end
+
+define rsr_int1
+show sysreg 28
+end
+
+
+
+define display_stack
+printf "ulCriticalNesting : %x\n" , *($arg0 + 0)
+printf "SR                : %x\n" , *($arg0 + 4)
+printf "PC                : %x\n" , *($arg0 + 8)
+printf "SP                : %x\n" , *($arg0 + 12)
+printf "R12                : %x\n" , *($arg0 + 16)
+printf "R11                : %x\n" , *($arg0 + 20)
+printf "R10                : %x\n" , *($arg0 + 24)
+printf "R9                : %x\n" , *($arg0 + 28)
+printf "R8                : %x\n" , *($arg0 + 32)
+printf "R7                : %x\n" , *($arg0 + 36)
+printf "R6                : %x\n" , *($arg0 + 40)
+printf "R5                : %x\n" , *($arg0 + 44)
+printf "R4                : %x\n" , *($arg0 + 48)
+printf "R3                : %x\n" , *($arg0 + 52)
+printf "R2                : %x\n" , *($arg0 + 56)
+printf "R1                : %x\n" , *($arg0 + 60)
+printf "R0                : %x\n" , *($arg0 + 64)
+printf "LR                : %x\n" , *($arg0 + 68)
+end

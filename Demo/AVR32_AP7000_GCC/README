@@ -1,0 +1,58 @@
+Directory list :
+================
+
+* appnotes
+  Codes from Atmel appnotes (with some modifications if necessary)
+
+* BasicWeb
+  Code for the Web server
+
+* Demo
+  Demo/Minimal
+    "Standard" FreeRTOS demonstration - ported from ARM FreeRTOS port
+  Demo/WebServer
+    Webserver demo, using lwip IP stack - ported from ARM
+  Demo/Full
+    Empty for the moment
+
+* EMAC
+  Code to handle the Ethernet controller in AP7000
+
+* lwip-1.1.1
+  Source code for the LWIP IP stack
+
+* lwip-port
+  Source code for connecting the LWIP IP stack to the EMAC Ethernet controller
+
+* Support
+  Various files necessary to run FreeRTOS on AVR32
+  ( C startup file, linker file, part and board specific file)
+
+
+To run a demo
+=============
+
+* Minimal *
+
+   cd Demo/Minimal
+   make clean rtosdemo.bin
+   Set jumpers/RS232  according to Demo/Minimal/settings.txt
+   avr32program program -e -f0,8Mb rtosdemo.bin (as root)
+   Reset the board
+
+* Webserver *
+  Edit EMAC/AVR32_EMAC.h and change 
+  - emacETHADDR0...emacETHADDR5 
+  - emacIPADDR0...emacIPADDR3
+  - emacGATEWAY_ADDR0...emacGATEWAY_ADDR3
+  - emacNET_MASK0...emacNET_MASK3
+  make clean rtosdemo.bin
+  Set jumpers/RS232  according to Demo/Webser/settings.txt
+  avr32program program -e -f0,8Mb rtosdemo.bin (as root)
+  Reset the board
+
+  
+
+  cd Demo/Webserver
+  
+
